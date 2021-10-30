@@ -19,8 +19,10 @@ import com.bawp.jetnote.model.Note
 import com.bawp.jetnote.screen.NoteScreen
 import com.bawp.jetnote.screen.NoteViewModel
 import com.bawp.jetnote.ui.theme.JetNoteTheme
+import dagger.hilt.android.AndroidEntryPoint
 
 @ExperimentalComposeUiApi
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
