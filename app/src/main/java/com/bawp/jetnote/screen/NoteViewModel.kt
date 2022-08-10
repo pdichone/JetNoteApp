@@ -29,6 +29,7 @@ class NoteViewModel @Inject constructor(private val repository: NoteRepository) 
                 .collect { listOfNotes ->
                      if (listOfNotes.isNullOrEmpty()) {
                          Log.d("Empty", ": Empty list")
+                         _noteList.value = emptyList()
                      }else {
                          _noteList.value = listOfNotes
                      }
